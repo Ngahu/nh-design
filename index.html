@@ -70,8 +70,41 @@
                       </li>      
         </ul>
 
-
-
+    <!-- the slider section -->
+  
+    <section class="slider">
+        <ul class="slides">
+            <li>
+              <img src="https://res.cloudinary.com/nearhomes/image/upload/v1522543345/sample.jpg"> <!-- random image -->
+              <div class="caption center-align">
+                <h3>FOr Tenants</h3>
+                <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+              </div>
+            </li>
+            <li>
+              <img src="https://res.cloudinary.com/nearhomes/image/upload/v1522543589/nearhomes.png"> <!-- random image -->
+              <div class="caption left-align">
+                <h3>For landlords</h3>
+                <h5 class="light grey-text text-lighten-3">watch video.</h5>
+              </div>
+            </li>
+            <li>
+              <img src="https://res.cloudinary.com/nearhomes/image/upload/v1522543345/sample.jpg"> <!-- random image -->
+              <div class="caption right-align">
+                <h3>For service providers</h3>
+                <h5 class="light grey-text text-lighten-3">watch video..</h5>
+              </div>
+            </li>
+            <li>
+              <img src="https://res.cloudinary.com/nearhomes/image/upload/v1522543589/nearhomes.png"> <!-- random image -->
+              <div class="caption center-align">
+                <h3>For realestate experts!</h3>
+                <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+              </div>
+            </li>
+          </ul>
+    </section>
+      <!-- the slider section -->
 
 
 
@@ -86,6 +119,15 @@
         //sidenav 
         const sideNav = document.querySelector('.sidenav');
         M.Sidenav.init(sideNav,{});
+
+        // slider
+        const slider = document.querySelector('.slider');
+        M.Slider.init(slider,{
+          indicators:false,
+          height:500,
+          transition:500,
+          interval:6000//six seconds
+        });
       </script>
     </body>
   </html>
